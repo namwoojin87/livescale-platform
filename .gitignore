@@ -1,0 +1,23 @@
+# Codex working artifacts and user-facing generated files
+work/
+outputs/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Terraform local state and credentials
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tar
+*.kubeconfig
+kubeconfig*.yaml
+crash.log
+
+# Experiment raw output
+results/
+*.csv
