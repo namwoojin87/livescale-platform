@@ -1,0 +1,11 @@
+# Copy this file to terraform.tfvars only when running Terraform manually.
+# The kubeconfig file itself must stay outside version control.
+kubeconfig_path = "C:/absolute/path/to/work/kubeconfig-livescale.yaml"
+
+image                 = "livescale-api:0.1.0"
+ingress_host          = "livescale.local"
+initial_replicas      = 2
+min_replicas          = 2
+max_replicas          = 8
+cpu_target_percent    = 60
+watch_work_iterations = 5000
